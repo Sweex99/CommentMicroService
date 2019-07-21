@@ -1,0 +1,68 @@
+module Api
+  module V1
+    # good
+    class CommentsController < ApplicationController
+      before_action :set_comment, only: %i[show update destroy]
+      def_param_group :comments do
+        param :comments, Hash do
+          param :text, Integer, required: true
+          param :user_id, Integer, required: true
+          param :product_id, Integer, required: true
+        end
+      end
+
+      api :GET, '/v1/comments', 'Show all comments'
+      def index
+        @comments = Comment.all
+
+        render json: @comments
+      end
+
+      api :GET, '/v1/comments/:id', 'Show comment'
+      param :id, Integer, required: true
+      def show
+        render json: @comment
+      end
+
+      api :POST, '/v1/comments', 'Create new comment'
+      param_group :comments
+      def create
+        @comment = Comment.new(comment_params)
+
+        if @comment.save
+          render json: @comment, status: :created, location: @comment
+        else
+          render json: @comment.errors, status: :unprocessable_entity
+        end
+      end
+
+      api :PUT, '/v1/comments', 'Update comment'
+      param_group :comments
+      def update
+        if @comment.update(comment_params)
+          render json: @comment
+        else
+          render json: @comment.errors, status: :unprocessable_entity
+        end
+      end
+
+      api :DELETE, '/v1/comments/:id', 'Destroy Comment'
+      param :id, Integer, required: true
+      def destroy
+        @comment.destroy
+      end
+
+      private
+
+      # Good
+      def set_comment
+        @comment = Comment.find(params[:id])
+      end
+
+      # Only allow a trusted parameter "white list" through.
+      def comment_params
+        params.require(:comment).permit(:text, :user_id, :product_id)
+      end
+    end
+  end
+end
