@@ -3,11 +3,11 @@ module Api
     # good
     class CommentsController < ApplicationController
       before_action :set_comment, only: %i[show update destroy]
-      def_param_group :comments do
-        param :comments, Hash do
-          param :text, Integer, required: true
-          param :user_id, Integer, required: true
-          param :product_id, Integer, required: true
+      def_param_group :comment do
+        param :comment, Hash do
+          param :text, String
+          param :user_id, :number
+          param :product_id, :number
         end
       end
 
@@ -19,25 +19,24 @@ module Api
       end
 
       api :GET, '/v1/comments/:id', 'Show comment'
-      param :id, Integer, required: true
       def show
         render json: @comment
       end
 
       api :POST, '/v1/comments', 'Create new comment'
-      param_group :comments
+      param_group :comment
       def create
-        @comment = Comment.new(comment_params)
+        @comment = ::Comment.new(comment_params)
 
         if @comment.save
-          render json: @comment, status: :created, location: @comment
+          render json: @comment, status: :created
         else
-          render json: @comment.errors, status: :unprocessable_entity
+          render json: @comment, status: :unprocessable_entity
         end
       end
 
-      api :PUT, '/v1/comments', 'Update comment'
-      param_group :comments
+      api :PUT, '/v1/comments/:id', 'Update comment'
+      param_group :comment
       def update
         if @comment.update(comment_params)
           render json: @comment
@@ -47,9 +46,10 @@ module Api
       end
 
       api :DELETE, '/v1/comments/:id', 'Destroy Comment'
-      param :id, Integer, required: true
       def destroy
         @comment.destroy
+
+        render json: @comment, status: :destroyed
       end
 
       private
