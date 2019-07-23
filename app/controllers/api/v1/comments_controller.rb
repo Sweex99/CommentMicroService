@@ -24,7 +24,7 @@ module Api
       end
 
       api :POST, '/v1/comments', 'Create new comment'
-      param_group :comments
+      param_group :comment
       def create
         @comment = Comment.new(comment_params)
 
@@ -36,7 +36,7 @@ module Api
       end
 
       api :PUT, '/v1/comments', 'Update comment'
-      param_group :comments
+      param_group :comment
       def update
         if @comment.update(comment_params)
           render json: @comment
