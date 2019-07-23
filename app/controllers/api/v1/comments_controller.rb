@@ -26,7 +26,7 @@ module Api
       api :POST, '/v1/comments', 'Create new comment'
       param_group :comment
       def create
-        @comment = ::Comment.new(comment_params)
+        @comment = Comment.new(comment_params)
 
         if @comment.save
           render json: @comment, status: :created
