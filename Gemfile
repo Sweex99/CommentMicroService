@@ -13,7 +13,6 @@ gem 'rails', '~> 5.2.3'
 # Use postgres as the database for Active Record
 =======
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Postgres
 >>>>>>> Deploy on Heroku #2
 gem 'pg'
