@@ -13,8 +13,11 @@ gem 'rails', '~> 5.2.3'
 # Use postgres as the database for Active Record
 =======
 # Use sqlite3 as the database for Active Record
+<<<<<<< HEAD
 # Postgres
 >>>>>>> Deploy on Heroku #2
+=======
+>>>>>>> Deploy on Heroku #7
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -40,7 +43,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  
+  gem 'sqlite3'
 end
 
 group :development do

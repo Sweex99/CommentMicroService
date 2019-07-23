@@ -3,8 +3,8 @@ module Api
     # good
     class CommentsController < ApplicationController
       before_action :set_comment, only: %i[show update destroy]
-      def_param_group :comments do
-        param :comments, Hash do
+      def_param_group :comment do
+        param :comment, Hash do
           param :text, Integer, required: true
           param :user_id, Integer, required: true
           param :product_id, Integer, required: true
@@ -19,7 +19,6 @@ module Api
       end
 
       api :GET, '/v1/comments/:id', 'Show comment'
-      param :id, Integer, required: true
       def show
         render json: @comment
       end
@@ -47,7 +46,6 @@ module Api
       end
 
       api :DELETE, '/v1/comments/:id', 'Destroy Comment'
-      param :id, Integer, required: true
       def destroy
         @comment.destroy
       end
