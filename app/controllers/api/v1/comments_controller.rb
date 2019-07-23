@@ -5,9 +5,9 @@ module Api
       before_action :set_comment, only: %i[show update destroy]
       def_param_group :comment do
         param :comment, Hash do
-          param :text, Integer, required: true
-          param :user_id, Integer, required: true
-          param :product_id, Integer, required: true
+          param :text, String
+          param :user_id, :number
+          param :product_id, :number
         end
       end
 
