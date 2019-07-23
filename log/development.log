@@ -5128,3 +5128,43 @@ Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-07-23 11:40:
 Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-07-23 11:40:07 +0300
 Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-07-23 11:40:07 +0300
 Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-07-23 11:40:07 +0300
+Started GET "/apipie/1.0/comments/index.html" for ::1 at 2019-07-23 11:44:29 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1.0", "resource"=>"comments", "method"=>"index.html"}
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/method.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (1.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_headers.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_method_detail.erb (3.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/method.html.erb within layouts/apipie/apipie (9.3ms)
+Completed 200 OK in 42ms (Views: 13.4ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-07-23 11:44:29 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-07-23 11:44:29 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-07-23 11:44:29 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-07-23 11:44:29 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-07-23 11:44:29 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-07-23 11:44:29 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-07-23 11:44:29 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-07-23 11:44:30 +0300
+Started GET "/apipie/1.0/comments/create.html" for ::1 at 2019-07-23 11:44:32 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1.0", "resource"=>"comments", "method"=>"create.html"}
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/method.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (0.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_params.html.erb (3.6ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_params.html.erb (6.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_headers.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_method_detail.erb (11.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/method.html.erb within layouts/apipie/apipie (14.9ms)
+Completed 200 OK in 44ms (Views: 18.1ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-07-23 11:44:32 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-07-23 11:44:32 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-07-23 11:44:32 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-07-23 11:44:32 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-07-23 11:44:32 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-07-23 11:44:32 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-07-23 11:44:32 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-07-23 11:44:32 +0300
