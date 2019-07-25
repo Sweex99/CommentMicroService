@@ -2,7 +2,12 @@ Rails.application.routes.draw do
   apipie
   namespace :api do
     namespace :v1 do
-      resources :comments
+      resources :comments do
+        collection do
+          get 'user_comments/:user_id', to: 'comments#user_comments', as: 'user_comments'
+          get 'nested_comments/:comment_id', to: 'comments#nested_comments', as: 'nested_comments'
+        end
+      end
     end
   end
 
