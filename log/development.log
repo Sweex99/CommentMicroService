@@ -5168,3 +5168,13 @@ Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-
 Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-07-23 11:44:32 +0300
 Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-07-23 11:44:32 +0300
 Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-07-23 11:44:32 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
