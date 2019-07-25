@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     # good
@@ -8,6 +10,7 @@ module Api
           param :text, String
           param :user_id, :number
           param :product_id, :number
+          param :comment_id, :number
         end
       end
 
@@ -52,6 +55,20 @@ module Api
         render json: @comment, status: :destroyed
       end
 
+      api :GET, '/v1/comments/:user_id', 'Return all user`s comments'
+      def user_comments
+        @comments = Comment.where(user_id: params[:user_id])
+
+        render json: @comments, status: :ok
+      end
+
+      api :GET, '/v1/comments/:user_id', 'Return all nested comments of comment'
+      def nested_comments
+        @comment = Comment.where(comment_id: params[:comment_id])
+
+        render json: @comments, status: :ok
+      end
+
       private
 
       # Good
@@ -61,7 +78,7 @@ module Api
 
       # Only allow a trusted parameter "white list" through.
       def comment_params
-        params.require(:comment).permit(:text, :user_id, :product_id)
+        params.require(:comment).permit(:text, :user_id, :product_id, :comment_id)
       end
     end
   end
