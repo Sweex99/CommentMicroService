@@ -2,5 +2,6 @@
 
 # good
 class User < ApplicationRecord
+  set_table_name 'users'
   has_many :comments, dependent: :destroy
 end
