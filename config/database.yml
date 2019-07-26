@@ -27,5 +27,5 @@ production:
   password: b959f57f2f1587e1f044fdee1ad86b69e827cc07fb71ea269a7decf8368ab3d8
   host: ec2-54-217-219-235.eu-west-1.compute.amazonaws.com
   database: d823iprm3nkr5a
-  port: 5432
+  post: 5432
 
