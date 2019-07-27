@@ -6,6 +6,7 @@ Rails.application.routes.draw do
         collection do
           get 'user_comments/:user_id', to: 'comments#user_comments', as: 'user_comments'
           get 'nested_comments/:comment_id', to: 'comments#nested_comments', as: 'nested_comments'
+          get 'product_comments/:product_id', to: 'comments#product_comments', as: 'product_comments'
         end
       end
     end

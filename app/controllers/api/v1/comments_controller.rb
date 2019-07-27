@@ -10,7 +10,7 @@ module Api
           param :text, String
           param :user_id, :number
           param :product_id, :number
-          param :comment_id, :number
+          param :comment_id, :number, 'not necessarily'
         end
       end
 
@@ -55,16 +55,23 @@ module Api
         render json: @comment, status: :destroyed
       end
 
-      api :GET, '/v1/comments/:user_id', 'Return all user`s comments'
+      api :GET, '/v1/comments/user_comments/:user_id', 'Return all user`s comments'
       def user_comments
         @comments = Comment.where(user_id: params[:user_id])
 
         render json: @comments, status: :ok
       end
 
-      api :GET, '/v1/comments/:user_id', 'Return all nested comments of comment'
+      api :GET, '/v1/comments/nested_comments/:comment_id', 'Return all nested comments of comment'
       def nested_comments
-        @comment = Comment.where(comment_id: params[:comment_id])
+        @comments = Comment.where(comment_id: params[:comment_id])
+
+        render json: @comments, status: :ok
+      end
+
+      api :GET, '/v1/comments/product_comments/:product_id', 'Return all comments of product'
+      def product_comments
+        @comments = Comment.where(product_id: params[:product_id])
 
         render json: @comments, status: :ok
       end
