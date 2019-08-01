@@ -52,7 +52,7 @@ module Api
       def destroy
         @comment.destroy
 
-        render json: @comment, status: :destroyed
+        render json: @comment, status: :ok
       end
 
       api :GET, '/v1/comments/user_comments/:user_id', 'Return all user`s comments'
@@ -85,7 +85,7 @@ module Api
 
       # Only allow a trusted parameter "white list" through.
       def comment_params
-        params.require(:comment).permit(:text, :user_id, :product_id, :comment_id)
+        params.permit(:id, :text, :user_id, :product_id, :comment_id)
       end
     end
   end

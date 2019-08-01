@@ -5589,3 +5589,1905 @@ Processing by Api::V1::CommentsController#product_comments as */*
 Completed 200 OK in 23ms (Views: 13.9ms | ActiveRecord: 8.1ms)
 
 
+Started GET "/apipie/1.0.html" for ::1 at 2019-07-27 15:47:23 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1.0.html"}
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (0.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (285.7ms)
+Completed 200 OK in 344ms (Views: 296.0ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-07-27 15:47:23 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-07-27 15:47:23 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-07-27 15:47:23 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-07-27 15:47:23 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-07-27 15:47:23 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-07-27 15:47:23 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-07-27 15:47:23 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-07-27 15:47:23 +0300
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" DEFAULT VALUES[0m
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("id") VALUES (?)[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "product_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["text", "1"], ["user_id", 1], ["product_id", 1], ["created_at", "2019-07-29 18:44:29.923022"], ["updated_at", "2019-07-29 18:44:29.923022"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/v1/comments" for ::1 at 2019-07-31 17:33:09 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::CommentsController#index as */*
+  Parameters: {"product_id"=>1, "comment"=>{"product_id"=>1}}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-07-31 17:35:09 +0300
+Processing by Api::V1::CommentsController#index as */*
+  Parameters: {"comment"=>{}}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 29ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 17:36:10 +0300
+Processing by Api::V1::CommentsController#create as */*
+  Parameters: {"comment"=>{"text"=>1, "product_id"=>1, "user_id"=>1, "comment_id"=>nil}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Apipie::ParamInvalid (Invalid parameter 'text' value 1: Must be a String):
+  
+apipie-rails (0.5.16) lib/apipie/param_description.rb:123:in `validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:346:in `block in validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:341:in `each'
+apipie-rails (0.5.16) lib/apipie/validator.rb:341:in `validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:42:in `valid?'
+apipie-rails (0.5.16) lib/apipie/param_description.rb:120:in `validate'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:256:in `block (2 levels) in _apipie_define_validators'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:254:in `each'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:254:in `block in _apipie_define_validators'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:283:in `block in _apipie_define_validators'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+apipie-rails (0.5.16) lib/apipie/static_dispatcher.rb:66:in `call'
+apipie-rails (0.5.16) lib/apipie/extractor/recorder.rb:137:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 17:36:26 +0300
+Processing by Api::V1::CommentsController#create as */*
+  Parameters: {"comment"=>{"text"=>"asd", "product_id"=>1, "user_id"=>1, "comment_id"=>nil}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Apipie::ParamInvalid (Invalid parameter 'comment_id' value nil: Must be a number.):
+  
+apipie-rails (0.5.16) lib/apipie/param_description.rb:123:in `validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:346:in `block in validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:341:in `each'
+apipie-rails (0.5.16) lib/apipie/validator.rb:341:in `validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:42:in `valid?'
+apipie-rails (0.5.16) lib/apipie/param_description.rb:120:in `validate'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:256:in `block (2 levels) in _apipie_define_validators'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:254:in `each'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:254:in `block in _apipie_define_validators'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:283:in `block in _apipie_define_validators'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+apipie-rails (0.5.16) lib/apipie/static_dispatcher.rb:66:in `call'
+apipie-rails (0.5.16) lib/apipie/extractor/recorder.rb:137:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 17:36:37 +0300
+Processing by Api::V1::CommentsController#create as */*
+  Parameters: {"comment"=>{"text"=>"asd", "product_id"=>1, "user_id"=>1, "comment_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mComment Create (7.7ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "product_id", "created_at", "updated_at", "comment_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["text", "asd"], ["user_id", 1], ["product_id", 1], ["created_at", "2019-07-31 14:36:37.779418"], ["updated_at", "2019-07-31 14:36:37.779418"], ["comment_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 201 Created in 73ms (Views: 0.6ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 17:59:34 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-07-31 17:59:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api-docs" for ::1 at 2019-07-31 17:59:40 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 17:59:40 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 17:59:41 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 17:59:41 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 17:59:41 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 17:59:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api-docs/v1/swagger.json"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 17:59:41 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:06:36 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:06:36 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:06:36 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:06:36 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:06:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api-docs/v1/swagger.json"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:06:37 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:09:28 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:09:28 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:09:28 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:09:28 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:09:29 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:09:29 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:13:05 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:13:05 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:13:05 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:13:05 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:13:06 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:13:06 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:13:06 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:13:06 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:13:06 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:13:06 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:13:07 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:13:07 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:14:13 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:14:13 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:14:13 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:14:13 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:14:13 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:14:13 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:14:16 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:14:59 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:14:59 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:14:59 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:14:59 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:14:59 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:14:59 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:18:38 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:18:38 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:18:38 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:18:38 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:18:39 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:18:39 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:20:14 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:20:14 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:20:14 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:20:14 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:20:14 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:20:14 +0300
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 18:20:37 +0300
+Processing by Api::V1::CommentsController#create as JSON
+  Parameters: {"name"=>"string", "photo_url"=>"string", "status"=>"string", "comment"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/api/v1/comments_controller.rb:88:in `comment_params'
+app/controllers/api/v1/comments_controller.rb:32:in `create'
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:25:03 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:25:03 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:25:03 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:25:03 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:25:04 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:25:04 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:26:32 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:26:32 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:26:32 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:26:32 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:26:32 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:26:32 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:26:59 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:26:59 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:26:59 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:26:59 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:26:59 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:26:59 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:40:24 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 18:40:34 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 18:40:34 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 18:40:34 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 18:40:34 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 18:40:35 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 18:40:35 +0300
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 18:40:57 +0300
+Processing by Api::V1::CommentsController#create as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>1, "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mComment Create (1.6ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "product_id", "created_at", "updated_at", "comment_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["text", "string"], ["user_id", 1], ["product_id", 1], ["created_at", "2019-07-31 15:40:57.820633"], ["updated_at", "2019-07-31 15:40:57.820633"], ["comment_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 201 Created in 48ms (Views: 0.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-07-31 18:48:35 +0300
+Processing by Api::V1::CommentsController#index as */*
+  Parameters: {"comment"=>{}}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 18:59:59 +0300
+Processing by Api::V1::CommentsController#create as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>1, "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "product_id", "created_at", "updated_at", "comment_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["text", "string"], ["user_id", 1], ["product_id", 1], ["created_at", "2019-07-31 15:59:59.458289"], ["updated_at", "2019-07-31 15:59:59.458289"], ["comment_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 201 Created in 23ms (Views: 0.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:09:11 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:09:11 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:09:11 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:09:11 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:09:12 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:09:12 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:12:43 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:12:43 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:12:43 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:12:43 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:12:43 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:12:43 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:12:45 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:12:45 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:12:45 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:12:45 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:12:45 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:12:45 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:13:33 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:13:34 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:13:34 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:13:34 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:13:34 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:13:34 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:23:01 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:23:01 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:23:01 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:23:01 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:23:01 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:23:01 +0300
+Started GET "/api/v1/comments/32" for ::1 at 2019-07-31 19:23:24 +0300
+Processing by Api::V1::CommentsController#show as JSON
+  Parameters: {"id"=>"32"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:26:22 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:26:22 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:26:22 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:26:22 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:26:22 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:26:22 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:26:44 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:26:44 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:26:44 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:26:44 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:26:44 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:26:44 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:26:59 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:26:59 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:26:59 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:26:59 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:26:59 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:26:59 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:27:09 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:27:09 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:27:09 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:27:09 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:27:09 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:27:09 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:27:39 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:27:39 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:27:39 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:27:39 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:27:39 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:27:39 +0300
+Started GET "/api/v1/comments" for ::1 at 2019-07-31 19:27:49 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/apipie" for ::1 at 2019-07-31 19:29:59 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (1.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (216.1ms)
+Completed 200 OK in 268ms (Views: 225.6ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-07-31 19:30:00 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-07-31 19:30:00 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-07-31 19:30:00 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-07-31 19:30:00 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-07-31 19:30:00 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-07-31 19:30:00 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-07-31 19:30:00 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-07-31 19:30:00 +0300
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 19:31:15 +0300
+Processing by Api::V1::CommentsController#create as JSON
+  Parameters: {"text"=>"string", "ser_id"=>1, "product_id"=>1, "comment_id"=>1, "comment"=>{"text"=>"string", "product_id"=>1, "comment_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 422 Unprocessable Entity in 21ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:32:27 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:32:27 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:32:27 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:32:27 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:32:28 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:32:28 +0300
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 19:32:42 +0300
+Processing by Api::V1::CommentsController#create as JSON
+  Parameters: {"text"=>"string", "ser_id"=>1, "product_id"=>1, "comment_id"=>1, "comment"=>{"text"=>"string", "product_id"=>1, "comment_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 422 Unprocessable Entity in 5ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 19:33:11 +0300
+Processing by Api::V1::CommentsController#create as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>1, "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mComment Create (1.3ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "product_id", "created_at", "updated_at", "comment_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["text", "string"], ["user_id", 1], ["product_id", 1], ["created_at", "2019-07-31 16:33:11.850104"], ["updated_at", "2019-07-31 16:33:11.850104"], ["comment_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 201 Created in 21ms (Views: 0.7ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/apipie" for ::1 at 2019-07-31 19:34:26 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (0.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.5ms)
+Completed 200 OK in 41ms (Views: 7.4ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-07-31 19:34:26 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 19:34:45 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 19:34:45 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 19:34:45 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 19:34:45 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 19:34:46 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 19:34:46 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 20:32:28 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 20:32:28 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 20:32:28 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 20:32:28 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 20:32:29 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 20:32:29 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 20:33:45 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 20:33:45 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 20:33:45 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 20:33:45 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 20:33:45 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 20:33:45 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 20:34:55 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 20:34:55 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 20:34:55 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 20:34:55 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 20:34:56 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 20:34:56 +0300
+Started GET "/api/v1/comments/32" for ::1 at 2019-07-31 20:36:08 +0300
+Processing by Api::V1::CommentsController#show as JSON
+  Parameters: {"id"=>"32"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 39ms (Views: 0.6ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:36:19 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 24ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:39:46 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:41:05 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}, "id"=>"32"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:42:02 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}, "id"=>"32"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:42:36 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}, "id"=>"32"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:44:07 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:44:09 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:44:57 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Unpermitted parameters: :id, :comment
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 24ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:45:49 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 21ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:46:22 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>110, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:47:48 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>110, "comment_id"=>110, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>110, "comment_id"=>110}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mComment Update (1.2ms)[0m  [1m[33mUPDATE "comments" SET "text" = ?, "product_id" = ?, "comment_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["text", "string"], ["product_id", 110], ["comment_id", 110], ["updated_at", "2019-07-31 17:47:48.827651"], ["id", 32]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 500 Internal Server Error in 18ms (Views: 0.7ms | ActiveRecord: 7.8ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:49:17 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>111, "comment_id"=>111, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>111, "comment_id"=>111}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mComment Update (0.6ms)[0m  [1m[33mUPDATE "comments" SET "product_id" = ?, "comment_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["product_id", 111], ["comment_id", 111], ["updated_at", "2019-07-31 17:49:17.454774"], ["id", 32]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 500 Internal Server Error in 16ms (Views: 0.6ms | ActiveRecord: 7.2ms)
+
+
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:49:48 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>112, "comment_id"=>112, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>112, "comment_id"=>112}}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mComment Update (0.3ms)[0m  [1m[33mUPDATE "comments" SET "product_id" = ?, "comment_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["product_id", 112], ["comment_id", 112], ["updated_at", "2019-07-31 17:49:48.977211"], ["id", 32]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 200 OK in 40ms (Views: 0.7ms | ActiveRecord: 7.8ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:51:44 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>112, "comment_id"=>112}, "id"=>"32"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 2.6ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:52:26 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>112, "comment_id"=>112}, "id"=>"32"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Unpermitted parameters: :comment, :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 200 OK in 24ms (Views: 0.5ms | ActiveRecord: 3.1ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:52:45 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>112, "comment_id"=>112, "id"=>"32", "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>112, "comment_id"=>112}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Unpermitted parameters: :id, :comment
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-07-31 20:53:26 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-07-31 20:53:26 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-07-31 20:53:26 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-07-31 20:53:26 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-07-31 20:53:27 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-07-31 20:53:27 +0300
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:53:43 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "ser_id"=>1, "product_id"=>1111, "comment_id"=>1111, "id"=>"32", "comment"=>{"text"=>"string", "product_id"=>1111, "comment_id"=>1111}}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Unpermitted parameters: :ser_id, :id, :comment
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mComment Update (1.1ms)[0m  [1m[33mUPDATE "comments" SET "product_id" = ?, "comment_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["product_id", 1111], ["comment_id", 1111], ["updated_at", "2019-07-31 17:53:44.053654"], ["id", 32]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 200 OK in 50ms (Views: 0.9ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 20:55:20 +0300
+Processing by Api::V1::CommentsController#create as */*
+  Parameters: {"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>nil, "comment"=>{"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>nil}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Apipie::ParamInvalid (Invalid parameter 'comment_id' value nil: Must be a number.):
+  
+apipie-rails (0.5.16) lib/apipie/param_description.rb:123:in `validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:346:in `block in validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:341:in `each'
+apipie-rails (0.5.16) lib/apipie/validator.rb:341:in `validate'
+apipie-rails (0.5.16) lib/apipie/validator.rb:42:in `valid?'
+apipie-rails (0.5.16) lib/apipie/param_description.rb:120:in `validate'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:256:in `block (2 levels) in _apipie_define_validators'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:254:in `each'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:254:in `block in _apipie_define_validators'
+apipie-rails (0.5.16) lib/apipie/dsl_definition.rb:283:in `block in _apipie_define_validators'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+apipie-rails (0.5.16) lib/apipie/static_dispatcher.rb:66:in `call'
+apipie-rails (0.5.16) lib/apipie/extractor/recorder.rb:137:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/v1/comments" for ::1 at 2019-07-31 20:55:32 +0300
+Processing by Api::V1::CommentsController#create as */*
+  Parameters: {"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>1, "comment"=>{"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>1}}
+Unpermitted parameter: :comment
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "product_id", "created_at", "updated_at", "comment_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["text", "sad"], ["user_id", 1], ["product_id", 1], ["created_at", "2019-07-31 17:55:32.966488"], ["updated_at", "2019-07-31 17:55:32.966488"], ["comment_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 201 Created in 13ms (Views: 0.5ms | ActiveRecord: 4.4ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:55:47 +0300
+Processing by Api::V1::CommentsController#update as */*
+  Parameters: {"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>1, "id"=>"32", "comment"=>{"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>1}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Unpermitted parameters: :id, :comment
+  [1m[35m (7.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mComment Update (6.1ms)[0m  [1m[33mUPDATE "comments" SET "text" = ?, "product_id" = ?, "comment_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["text", "sad"], ["product_id", 1], ["comment_id", 1], ["updated_at", "2019-07-31 17:55:47.901389"], ["id", 32]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 17.6ms)
+
+
+Started PUT "/api/v1/comments/32" for ::1 at 2019-07-31 20:58:06 +0300
+Processing by Api::V1::CommentsController#update as */*
+  Parameters: {"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>1, "id"=>"32", "comment"=>{"text"=>"sad", "user_id"=>1, "product_id"=>1, "comment_id"=>1}}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Unpermitted parameter: :comment
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:44
+Completed 200 OK in 34ms (Views: 0.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api-docs" for ::1 at 2019-08-01 10:37:21 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/index.html" for ::1 at 2019-08-01 10:37:21 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-01 10:37:21 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-01 10:37:21 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-01 10:37:21 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-01 10:37:21 +0300
+Started GET "/apipie" for ::1 at 2019-08-01 10:37:41 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (0.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (200.6ms)
+Completed 200 OK in 252ms (Views: 209.4ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-08-01 10:37:41 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-08-01 10:37:41 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-08-01 10:37:41 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-08-01 10:37:41 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-08-01 10:37:41 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-08-01 10:37:41 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-08-01 10:37:41 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-08-01 10:37:42 +0300
+Started GET "/favicon.ico" for ::1 at 2019-08-01 10:37:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api-docs/index.html" for ::1 at 2019-08-01 10:39:12 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-01 10:39:12 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-01 10:39:12 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-01 10:39:12 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-01 10:39:12 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-01 10:39:13 +0300
+Started GET "/api/v1/comments" for ::1 at 2019-08-01 10:39:30 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 52ms (Views: 25.2ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/v1/comments/3" for ::1 at 2019-08-01 10:39:38 +0300
+Processing by Api::V1::CommentsController#destroy as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:53
+  [1m[36mComment Destroy (3.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/comments_controller.rb:53
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:53
+Completed 500 Internal Server Error in 23ms (Views: 0.8ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-08-01 10:39:49 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-08-01 10:45:13 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-01 10:45:13 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-01 10:45:13 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-01 10:45:13 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-01 10:45:13 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-01 10:45:13 +0300
+Started GET "/api/v1/comments/user_comments/1" for ::1 at 2019-08-01 10:45:25 +0300
+Processing by Api::V1::CommentsController#user_comments as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:62
+Completed 200 OK in 25ms (Views: 15.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-08-01 10:45:48 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/comments/nested_comments/1" for ::1 at 2019-08-01 10:46:13 +0300
+Processing by Api::V1::CommentsController#nested_comments as JSON
+  Parameters: {"comment_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."comment_id" = ?[0m  [["comment_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:69
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-01 10:46:36 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:76
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/36" for ::1 at 2019-08-01 10:46:50 +0300
+Processing by Api::V1::CommentsController#show as JSON
+  Parameters: {"id"=>"36"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/37" for ::1 at 2019-08-01 10:46:56 +0300
+Processing by Api::V1::CommentsController#show as JSON
+  Parameters: {"id"=>"37"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/38" for ::1 at 2019-08-01 10:47:01 +0300
+Processing by Api::V1::CommentsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Comment with 'id'=38):
+  
+app/controllers/api/v1/comments_controller.rb:83:in `set_comment'
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 10:47:06 +0300
+Processing by Api::V1::CommentsController#show as JSON
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-01 11:09:58 +0300
+Processing by Rails::WelcomeController#index as */*
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-01 11:10:00 +0300
+Processing by Rails::WelcomeController#index as */*
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-08-01 11:10:53 +0300
+Processing by Api::V1::CommentsController#index as */*
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/comments/1" for ::1 at 2019-08-01 11:11:31 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Comment with 'id'=1):
+  
+app/controllers/api/v1/comments_controller.rb:83:in `set_comment'
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:11:52 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:12:03 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:12:17 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:06 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:19 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:20 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:20 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:21 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:21 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:21 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:21 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:21 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:22 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:22 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:22 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:22 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:22 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:23 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:23 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:23 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:23 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:24 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:24 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:24 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:25 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:55 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:56 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:57 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:57 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:57 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:57 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:58 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:58 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:58 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:58 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:14:58 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:16:34 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:02 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:11 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:11 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:12 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:12 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:51 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:51 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:52 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:52 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started OPTIONS "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:52 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/comments/35"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:17:59 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:19:51 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-08-01 11:21:00 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:21:19 +0300
+Processing by Api::V1::CommentsController#show as JSON
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:21:56 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-08-01 11:22:06 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-01 11:22:06 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-01 11:22:06 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-01 11:22:06 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-01 11:22:07 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-01 11:22:07 +0300
+Started GET "/api/v1/comments/35" for ::1 at 2019-08-01 11:22:19 +0300
+Processing by Api::V1::CommentsController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/comments/user_comments/1" for ::1 at 2019-08-01 11:22:48 +0300
+Processing by Api::V1::CommentsController#user_comments as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:62
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-08-01 11:23:14 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-08-01 11:23:45 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-01 11:23:45 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-01 11:23:45 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-01 11:23:45 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-01 11:23:46 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-01 11:23:46 +0300
+Started POST "/api/v1/comments" for ::1 at 2019-08-01 11:23:57 +0300
+Processing by Api::V1::CommentsController#create as JSON
+  Parameters: {"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>0, "comment"=>{"text"=>"string", "user_id"=>1, "product_id"=>1, "comment_id"=>0}}
+Unpermitted parameter: :comment
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[36mComment Create (1.4ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "product_id", "created_at", "updated_at", "comment_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["text", "string"], ["user_id", 1], ["product_id", 1], ["created_at", "2019-08-01 08:23:57.074988"], ["updated_at", "2019-08-01 08:23:57.074988"], ["comment_id", 0]]
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:34
+Completed 201 Created in 64ms (Views: 0.6ms | ActiveRecord: 12.0ms)
+
+
+Started PUT "/api/v1/comments/1" for ::1 at 2019-08-01 11:24:11 +0300
+Processing by Api::V1::CommentsController#update as JSON
+  Parameters: {"text"=>"string", "user_id"=>0, "product_id"=>0, "comment_id"=>0, "id"=>"1", "comment"=>{"text"=>"string", "user_id"=>0, "product_id"=>0, "comment_id"=>0}}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Comment with 'id'=1):
+  
+app/controllers/api/v1/comments_controller.rb:83:in `set_comment'
+Started DELETE "/api/v1/comments/4" for ::1 at 2019-08-01 11:24:28 +0300
+Processing by Api::V1::CommentsController#destroy as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:53
+  [1m[36mComment Destroy (1.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/comments_controller.rb:53
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:53
+Completed 200 OK in 13ms (Views: 0.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/api/v1/comments/user_comments/1" for ::1 at 2019-08-01 11:24:44 +0300
+Processing by Api::V1::CommentsController#user_comments as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:62
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/nested_comments/1" for ::1 at 2019-08-01 11:25:44 +0300
+Processing by Api::V1::CommentsController#nested_comments as JSON
+  Parameters: {"comment_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."comment_id" = ?[0m  [["comment_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:69
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+

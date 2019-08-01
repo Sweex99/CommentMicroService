@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'rspec-rails'
+
+gem 'rswag'
+
+gem 'rack-cors'
 # API documentation
 gem 'apipie-rails'
 # Faker

@@ -1,0 +1,357 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API V1",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/v1/comments": {
+      "post": {
+        "summary": "Creates a comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "comment",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "user_id": {
+                  "type": "integer"
+                },
+                "product_id": {
+                  "type": "integer"
+                },
+                "comment_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "text",
+                "user_id",
+                "product_id"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "comment created"
+          },
+          "422": {
+            "description": "invalid request"
+          }
+        }
+      },
+      "get": {
+        "summary": "Retrieves all comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "comment found"
+          },
+          "404": {
+            "description": "comment not found"
+          }
+        }
+      }
+    },
+    "/api/v1/comments/{id}": {
+      "get": {
+        "summary": "Retrieves a comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "comment found",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "product_id": {
+                  "type": "integer"
+                },
+                "user_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "text",
+                "product_iduser_id"
+              ]
+            }
+          },
+          "404": {
+            "description": "pet not found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Updates a comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "comment",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "user_id": {
+                  "type": "integer"
+                },
+                "product_id": {
+                  "type": "integer"
+                },
+                "comment_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "text",
+                "user_id",
+                "product_id"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "comment created"
+          },
+          "422": {
+            "description": "invalid request"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Updates a comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "comment created"
+          },
+          "422": {
+            "description": "invalid request"
+          }
+        }
+      }
+    },
+    "/api/v1/comments/user_comments/{user_id}": {
+      "get": {
+        "summary": "Retrieves a comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "comment found",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "product_id": {
+                  "type": "integer"
+                },
+                "user_id": {
+                  "type": "integer"
+                },
+                "comment_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "text",
+                "product_iduser_id",
+                "comment_id"
+              ]
+            }
+          },
+          "404": {
+            "description": "pet not found"
+          }
+        }
+      }
+    },
+    "/api/v1/comments/nested_comments/{comment_id}": {
+      "get": {
+        "summary": "Retrieves a comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "comment_id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "comment found",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "product_id": {
+                  "type": "integer"
+                },
+                "user_id": {
+                  "type": "integer"
+                },
+                "comment_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "text",
+                "product_iduser_id",
+                "comment_id"
+              ]
+            }
+          },
+          "404": {
+            "description": "pet not found"
+          }
+        }
+      }
+    },
+    "/api/v1/comments/product_comments/{product_id}": {
+      "get": {
+        "summary": "Retrieves a comment",
+        "tags": [
+          "Comments"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "product_id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "comment found",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "product_id": {
+                  "type": "integer"
+                },
+                "user_id": {
+                  "type": "integer"
+                },
+                "comment_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "text",
+                "product_iduser_id",
+                "comment_id"
+              ]
+            }
+          },
+          "404": {
+            "description": "pet not found"
+          }
+        }
+      }
+    }
+  }
+}
