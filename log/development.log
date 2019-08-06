@@ -9679,3 +9679,18 @@ Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-05 23
 Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-05 23:58:29 +0300
 Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-05 23:58:29 +0300
   [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/api-docs/index.html" for ::1 at 2019-08-06 19:50:48 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-06 19:50:48 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-06 19:50:48 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-06 19:50:48 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-06 19:50:49 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-06 19:50:49 +0300
+Started GET "/api/v1/comments" for ::1 at 2019-08-06 19:50:53 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 29ms (Views: 20.8ms | ActiveRecord: 1.1ms)
+
+
