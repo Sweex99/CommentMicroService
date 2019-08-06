@@ -11,11 +11,4 @@ class Comment < ApplicationRecord
             numericality: { only_integer: true }
   validates :user_id,
             numericality: { only_integer: true }
-
-  private
-
-  def comment_id_empty?
-    bool = comment_id.nil?
-    Rails.logger.debug(bool)
-  end
 end

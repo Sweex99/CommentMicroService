@@ -71,9 +71,9 @@ module Api
 
       api :GET, '/v1/comments/product_comments/:product_id', 'Return all comments of product'
       def product_comments
-        @comments = Comment.where(product_id: params[:product_id])
+        @comments = CommentTransferObject.new(params[:product_id]).return_dto_object
 
-        render json: @comments, status: :ok
+        render json: @comments.to_json, status: :ok
       end
 
       private
