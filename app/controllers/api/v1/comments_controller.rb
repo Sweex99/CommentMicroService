@@ -6,12 +6,10 @@ module Api
     class CommentsController < ApplicationController
       before_action :set_comment, only: %i[show update destroy]
       def_param_group :comment do
-        param :comment, Hash do
-          param :text, String
-          param :user_id, :number
-          param :product_id, :number
-          param :comment_id, :number, 'not necessarily'
-        end
+        param :text, String
+        param :user_id, :number
+        param :product_id, :number
+        param :comment_id, :number, 'not necessarily'
       end
 
       api :GET, '/v1/comments', 'Show all comments'
@@ -71,12 +69,25 @@ module Api
 
       api :GET, '/v1/comments/product_comments/:product_id', 'Return all comments of product'
       def product_comments
-        @comments = CommentTransferObject.new(params[:product_id]).return_dto_object
+        @comments = return_dto_object(params[:product_id], :product_id)
 
         render json: @comments.to_json, status: :ok
       end
 
       private
+
+      # DTO methods that return user for each comment and based on that serialized json
+      def return_dto_object(id, column)
+        Comment.where(column => id)
+               .includes(:user)
+               .map do |a|
+                 {
+                   'id' => a.id,
+                   'text' => a.text,
+                   'user_name' => a.user['username']
+                 }
+               end
+      end
 
       # Good
       def set_comment

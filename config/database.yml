@@ -1,3 +1,9 @@
+# PostgresSQL 
+#   gem install pg
+#
+#   Or in Gemfile 
+#   gem 'pg'
+#
 # SQLite version 3.x
 #   gem install sqlite3
 #

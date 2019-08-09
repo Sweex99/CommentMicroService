@@ -3,16 +3,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+# Gem for avoid pushing credentials and acces keys to github
 gem 'dotenv-rails'
-
+# Framework for testing ruby code
 gem 'rspec-rails'
-
+# Gem for generate API-documentation
 gem 'rswag'
-
+# Gem for able to obtain all kind request to server
 gem 'rack-cors'
 # API documentation
 gem 'apipie-rails'
-# Faker
+# Gem for generate random data for model`s record (for specific columns)
 gem 'faker'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'

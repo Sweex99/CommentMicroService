@@ -9694,3 +9694,301 @@ Processing by Api::V1::CommentsController#index as JSON
 Completed 200 OK in 29ms (Views: 20.8ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/api-docs" for ::1 at 2019-08-07 17:34:45 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api-docs/index.html" for ::1 at 2019-08-07 17:34:45 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-07 17:34:45 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-07 17:34:45 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-07 17:34:45 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-07 17:34:46 +0300
+Started GET "/api/v1/comments" for ::1 at 2019-08-07 17:34:59 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 37ms (Views: 22.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/v1/comments" for ::1 at 2019-08-07 17:35:11 +0300
+Processing by Api::V1::CommentsController#index as JSON
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comments_controller.rb:21
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 17:35:18 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."yield" = ?[0m  [["yield", "1"]]
+  ↳ app/controllers/api/v1/comments_controller.rb:84
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: comments.yield: SELECT "comments".* FROM "comments" WHERE "comments"."yield" = ?):
+  
+app/controllers/api/v1/comments_controller.rb:84:in `map'
+app/controllers/api/v1/comments_controller.rb:84:in `return_dto_object'
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 17:42:59 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00007fa9888bf2e8>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `block in product_comments'
+app/controllers/api/v1/comments_controller.rb:82:in `return_dto_object'
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 17:43:22 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00007fa988543880>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `block in product_comments'
+app/controllers/api/v1/comments_controller.rb:82:in `return_dto_object'
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 17:43:39 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00007fa978110598>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `block in product_comments'
+app/controllers/api/v1/comments_controller.rb:82:in `return_dto_object'
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 17:44:20 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00005563d0089330>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `block in product_comments'
+app/controllers/api/v1/comments_controller.rb:82:in `return_dto_object'
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 17:44:59 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00007fa98803cad0>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `block in product_comments'
+app/controllers/api/v1/comments_controller.rb:82:in `return_dto_object'
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api-docs/index.html" for ::1 at 2019-08-07 18:00:12 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-07 18:00:12 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-07 18:00:12 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-07 18:00:12 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-07 18:00:13 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-07 18:00:13 +0300
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:24:13 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00005563d0201b68>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:26:16 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00007fa980121e30>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:26:32 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00007fa988024200>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api-docs/index.html" for ::1 at 2019-08-07 18:30:43 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-07 18:30:43 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-07 18:30:43 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-07 18:30:43 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-07 18:30:43 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-07 18:30:43 +0300
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:30:50 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+  [1m[36mComment Load (2.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:84
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:84
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:32:47 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."column" = ?[0m  [["column", "1"]]
+  ↳ app/controllers/api/v1/comments_controller.rb:84
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: comments.column: SELECT "comments".* FROM "comments" WHERE "comments"."column" = ?):
+  
+app/controllers/api/v1/comments_controller.rb:84:in `map'
+app/controllers/api/v1/comments_controller.rb:84:in `return_dto_object'
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:34:48 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00007fa9884f5bd0>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:34:57 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `product_id' for #<Api::V1::CommentsController:0x00005563cf994db8>
+Did you mean?  product_comments):
+  
+app/controllers/api/v1/comments_controller.rb:74:in `product_comments'
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:40:27 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:85
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:85
+[{"id"=>5, "text"=>"string 5", "user_name"=>"Taras"}, {"id"=>32, "text"=>"sad", "user_name"=>"Taras"}, {"id"=>33, "text"=>"asd", "user_name"=>"Taras"}, {"id"=>34, "text"=>"string", "user_name"=>"Taras"}, {"id"=>35, "text"=>"string", "user_name"=>"Taras"}, {"id"=>36, "text"=>"string", "user_name"=>"Taras"}, {"id"=>37, "text"=>"sad", "user_name"=>"Taras"}, {"id"=>38, "text"=>"string", "user_name"=>"Taras"}]
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 18:43:28 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:85
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:85
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/comments/product_comments/1" for ::1 at 2019-08-07 19:57:50 +0300
+Processing by Api::V1::CommentsController#product_comments as JSON
+  Parameters: {"product_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:85
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:85
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2019-08-07 20:23:08 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-07 20:23:08 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-07 20:23:08 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-07 20:23:08 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-07 20:23:08 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-07 20:23:08 +0300
+Started GET "/apipie" for ::1 at 2019-08-07 20:27:18 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (0.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (243.5ms)
+Completed 200 OK in 293ms (Views: 252.4ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-08-07 20:27:18 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-08-07 20:27:18 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-08-07 20:27:18 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-08-07 20:27:18 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-08-07 20:27:19 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-08-07 20:27:19 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-08-07 20:27:19 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-08-07 20:27:19 +0300
+Started GET "/apipie/1.0/comments/create.html" for ::1 at 2019-08-07 20:27:22 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1.0", "resource"=>"comments", "method"=>"create.html"}
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/method.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (0.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_params.html.erb (3.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_headers.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_method_detail.erb (8.7ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/method.html.erb within layouts/apipie/apipie (14.6ms)
+Completed 200 OK in 74ms (Views: 21.5ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-08-07 20:27:22 +0300
+Started GET "/apipie/1.0.html" for ::1 at 2019-08-07 20:51:58 +0300
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1.0.html"}
+  Rendering /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/_languages.erb (0.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/apipie-rails-0.5.16/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (4.6ms)
+Completed 200 OK in 37ms (Views: 9.3ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/apipie/stylesheets/bundled/prettify.css" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/apipie/javascripts/bundled/jquery.js" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/apipie/stylesheets/application.css" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/apipie/javascripts/bundled/prettify.js" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/apipie/javascripts/apipie.js" for ::1 at 2019-08-07 20:51:58 +0300
+Started GET "/api-docs/index.html" for ::1 at 2019-08-07 20:52:04 +0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-08-07 20:52:04 +0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-08-07 20:52:04 +0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-08-07 20:52:04 +0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-08-07 20:52:04 +0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-08-07 20:52:04 +0300
+Started GET "/api/v1/comments/user_comments/1" for ::1 at 2019-08-07 20:52:16 +0300
+Processing by Api::V1::CommentsController#user_comments as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:84
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/comments_controller.rb:84
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 2.6ms)
+
+
